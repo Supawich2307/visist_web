@@ -2,8 +2,6 @@ version: '3'
 services:
   redis-server:
     image: 'redis'
-    environment:
-      - DOCKER_HOST=tcp://node-app:8081
   node-app:
     restart: always
     build: .
